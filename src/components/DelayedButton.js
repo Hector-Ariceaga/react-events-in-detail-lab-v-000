@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 
 export default class DelayedButton extends Component{
+
   handleClick = (event) => {
     event.persist()
     setTimeout(() => {
@@ -11,7 +12,7 @@ export default class DelayedButton extends Component{
 
   render(){
     return(
-      <button onClick={this.handleClick}></button>
+      <button onClick={this.handleClick}>Delayed</button>
     )
   }
 }
