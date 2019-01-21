@@ -3,9 +3,7 @@ import React, {Component} from 'react';
 
 export default class CoordinatesButton extends Component{
 
-  handleClick = (event) => (
-    let coordinates = [event.clientX, event.clientY]
-    this.props.onReceiveCoordinates = coordinates
+  handleClick = (event) => (    this.props.onReceiveCoordinates([event.clientX, event.clientY])
   )
   
   render(){
